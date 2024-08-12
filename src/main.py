@@ -15,8 +15,9 @@ st.markdown("""
     }
     .stTextInput > div > div > input {
         font-size: 24px;
-        height: 60px;
+        height: 60px;  /* Same height as buttons */
         text-align: right;
+        padding-right: 10px;  /* Optional: Adds padding for better alignment */
     }
     .calculator {
         max-width: 400px;
@@ -62,10 +63,10 @@ with st.container():
         st.button('AC', on_click=button_click, args=('AC',))
 
     # Create 4 rows of buttons
-    for row in [['7', '8', '9', '/'],
-                ['4', '5', '6', '*'],
-                ['1', '2', '3', '-'],
-                ['0', '.', '=', "+"]]:
+    for row in [['7', '8', '9', '&#47;'],    # '/' character as &#47;
+                ['4', '5', '6', '&#42;'],    # '*' character as &#42;
+                ['1', '2', '3', '&#8722;'],  # '-' character as &#8722;
+                ['0', '.', '=', '&#43;']]:   # '+' character as &#43;
         cols = st.columns(4)
         for i, button in enumerate(row):
             with cols[i]:
