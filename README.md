@@ -1,6 +1,6 @@
 # Simple Calculator App
 
-This is a simple calculator built using [Streamlit](https://streamlit.io/). The calculator supports basic arithmetic operations, including addition, subtraction, multiplication, and division.
+This is a simple calculator built using [Streamlit](https://streamlit.io/). The calculator supports basic arithmetic operations, including addition, subtraction, multiplication, and division. The app is already deploy in [cloud](https://simplecalculatorr.streamlit.app/)
 
 ## Features
 
